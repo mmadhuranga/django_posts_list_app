@@ -1,0 +1,12 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=REM:wght@200&display=swap" rel="stylesheet">
+
+<body style="font-family: 'REM', sans-serif;">
+    <h1>My Django simple posts list app</h1>
+    <ul>
+        {% for post in all_posts_list %}
+        <li>{{post.text}}</li>
+        {%endfor%}
+    </ul>
+</body>
